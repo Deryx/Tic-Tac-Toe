@@ -49,8 +49,8 @@ var appModule = (function() {
 
 		$( 'body' ).closelightbox();
 
-    var playGame = function( move ) {
-  		if ( maxmoves >= 1 ) {
+        var playGame = function() {
+  		    if ( maxmoves >= 1 ) {
 				setTimeout(function() {
 	  			computerMove(playerpiece, computerpiece);
 					maxmoves--;
@@ -63,10 +63,10 @@ var appModule = (function() {
   				playGame()
   				}, 5000);
         }
-  		}
-			else {
-				broadcast_tie();
-			}
+		    else {
+                broadcast_tie();
+            }
+		}
 
   		playGame();
 	});
