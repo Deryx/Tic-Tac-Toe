@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>FreeCodeCamp: Tic Tac Toe</title>
+
+		<meta name="author" content="Deryx E. Scott" />
+
+		<link href="css/normalize.css" rel="stylesheet" />
+		<link href="css/styles.css" rel="stylesheet" />
+
+		<script src="scripts/jquery-3.1.1.min.js"></script>
+	</head>
+
+	<body>
+
+		<header>
+			<h1>FreeCodeCamp</h1>
+		</header>
+
+		<section>
+			<hgroup>
+				<h2>FreeCodeCamp</h2>
+				<h1>Tic Tac Toe</h1>
+			</hgroup>
+
+			<div id="gameboard">
+				<div class="row">
+					<div class="column" id="1"></div>
+					<div class="column" id="2"></div>
+					<div class="column" id="3"></div>
+				</div>
+				<div class="row">
+					<div class="column" id="4"></div>
+					<div class="column" id="5"></div>
+					<div class="column" id="6"></div>
+				</div>
+				<div class="row">
+					<div class="column" id="7"></div>
+					<div class="column" id="8"></div>
+					<div class="column" id="9"></div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Dark background -->
+		<div id="site-overlay">
+		</div>
+
+		<!-- Lightboxes -->
+		<div id="selection-lightbox">
+			<div>
+				<h2>Select one (click): </h2>
+				<div id="X">X</div> OR <div id="O">O</div>
+				<h2>("X" goes first)</h2>
+			</div>
+		</div>
+
+		<div id="winner-lightbox">
+			<div>
+				<h1></h1>
+			</div>
+		</div>
+
+		<!-- JavaScript -->
+		<script src="plugins/lightbox.js"></script>
+		<script src="scripts/application.js"></script>
+
+	</body>
+</html>
